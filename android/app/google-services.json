@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "797435164277",
+    "project_id": "fundizen-1",
+    "storage_bucket": "fundizen-1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797435164277:android:08c1802c10892510a1aa3c",
+        "android_client_info": {
+          "package_name": "com.fundizen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIJ9T0Uz1Lbqs6jj9tNwGx5LKVk9q-DSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
