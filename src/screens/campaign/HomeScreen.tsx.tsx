@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import {  View,  Text,  FlatList,  StyleSheet,  Image,  TouchableOpacity,  Alert,  ActivityIndicator } from 'react-native';
-import { db } from '../../FirebaseConfig'; 
+import { db } from '../../config/Firebase'; 
 import { collection, getDocs, query, where } from 'firebase/firestore';
-import { useAuth } from '../../AuthContext'; 
-import { RootStackParamList } from '../../types'; 
+import { useAuth } from '../../context/AuthContext'; 
+import { RootStackParamList } from '../../../types'; 
 import { DrawerNavigationProp } from '@react-navigation/drawer';
 
 // Define Campaign type

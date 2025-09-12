@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity, ActivityIndicator,} from 'react-native';
-import { FIREBASE_AUTH } from '../../FirebaseConfig'; 
+import { FIREBASE_AUTH } from '../../config/Firebase'; 
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { RootStackParamList } from '../../types'; 
+import { RootStackParamList } from '../../../types'; 
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 type Props = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 import { signOut } from 'firebase/auth';
-import { FIREBASE_AUTH } from '../../FirebaseConfig';
+import { FIREBASE_AUTH } from '../../config/Firebase';
 
 const ProfileScreen = ({ navigation }: any) => {
   const handleSignOut = async () => {

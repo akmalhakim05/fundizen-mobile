@@ -1,7 +1,7 @@
 // screens/CreateCampaign.tsx
 import React, { useState } from 'react';
 import {  View,  Text,  TextInput,  Button,  StyleSheet,  Alert,  Image,  TouchableOpacity,} from 'react-native';
-import { db, FIREBASE_AUTH } from '../../FirebaseConfig';
+import { db, FIREBASE_AUTH } from '../../config/Firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import * as ImagePicker from 'expo-image-picker';
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {  View,  Text,  TextInput,  StyleSheet,  Image,  TouchableOpacity,  ActivityIndicator} from 'react-native';
-import { FIREBASE_AUTH } from '../../FirebaseConfig'; 
+import { FIREBASE_AUTH } from '../config/Firebase'; 
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../types'; 

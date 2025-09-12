@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
-import { db, FIREBASE_AUTH } from '../../FirebaseConfig';
+import { db, FIREBASE_AUTH } from '../../config/Firebase';
 import { collection, getDocs, query, where } from 'firebase/firestore';
-import { Campaign } from '../../types';
+import { Campaign } from '../../../types';
 
 const MyCampaignScreen = () => {
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);

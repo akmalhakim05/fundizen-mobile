@@ -1,11 +1,11 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { AuthProvider } from './AuthContext';
+import { AuthProvider } from './src/context/AuthContext';
 
 // Screens
-import Login from './app/screens/Login';
-import Register from './app/screens/Register';
-import Verification from './app/screens/Verification';
+import Login from './src/screens/Login';
+import Register from './src/screens/auth/Register';
+import Verification from './src/screens/auth/Verification';
 
 // Drawer Navigator
 import DrawerNavigator from './navigation/DrawerNavigator';
