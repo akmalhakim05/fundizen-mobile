@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
-import { Campaign } from '../../types';
+import { Campaign } from '../../types/types';
 import { COLORS, CURRENCY } from '../../config/Constants';
-import { ProgressBar } from './ProgressBar';
+//import { ProgressBar } from './ProgressBar';
 
 interface CampaignCardProps {
   campaign: Campaign;
@@ -20,7 +20,7 @@ export const CampaignCard: React.FC<CampaignCardProps> = ({ campaign, onPress })
         {new Intl.NumberFormat('en-MY', { style: 'currency', currency: CURRENCY }).format(campaign.amountRaised)} /{' '}
         {new Intl.NumberFormat('en-MY', { style: 'currency', currency: CURRENCY }).format(campaign.goal)}
       </Text>
-      <ProgressBar progress={progress} />
+    {/* <ProgressBar progress={progress} />  */}
     </TouchableOpacity>
   );
 };
