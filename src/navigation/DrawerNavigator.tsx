@@ -2,11 +2,11 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 // Screens
-import HomeScreen from 'src/screens/campaign/HomeScreen';
-import ProfileScreen from '../app/screens/Profile';
-import MyCampaignScreen from '../app/screens/MyCampaign';
-import CreateCampaignScreen from '../app/screens/CreateCampaign';
-import Details from '../app/screens/Details'; 
+import HomeScreen from '../screens/campaign/HomeScreen';
+import ProfileScreen from '../screens/profile/Profile';
+import MyCampaignScreen from '../screens/campaign/MyCampaignScreen';
+import CreateCampaignScreen from '../screens/campaign/CreateCampaign';
+import Details from '../screens/campaign/CampaignDetailsScreen'; 
 
 const Drawer = createDrawerNavigator();
 

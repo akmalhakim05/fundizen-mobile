@@ -3,7 +3,7 @@ import {  View,  Text,  FlatList,  StyleSheet,  Image,  TouchableOpacity,  Alert
 import { db } from '../../config/Firebase'; 
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { useAuth } from '../../context/AuthContext'; 
-import { RootStackParamList } from '../../../types'; 
+import { RootStackParamList } from '../../types/types'; 
 import { DrawerNavigationProp } from '@react-navigation/drawer';
 
 // Define Campaign type

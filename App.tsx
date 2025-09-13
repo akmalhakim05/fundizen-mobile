@@ -3,15 +3,15 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { AuthProvider } from './src/context/AuthContext';
 
 // Screens
-import Login from './src/screens/Login';
-import Register from './src/screens/auth/Register';
-import Verification from './src/screens/auth/Verification';
+import LoginScreen from './src/screens/Auth/LoginScreen';
+import RegisterScreen from './src/screens/Auth/RegisterScreen';
+import VerificationScreen from './src/screens/Auth/VerificationScreen';
 
-// Drawer Navigator
-import DrawerNavigator from './navigation/DrawerNavigator';
+// Navigation
+import DrawerNavigator from './src/navigation/DrawerNavigator';
 
 // Types
-import { RootStackParamList } from './types';
+import { RootStackParamList } from './src/types/types';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -20,9 +20,9 @@ export default function App() {
     <AuthProvider>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Login">
-          <Stack.Screen name="Login" component={Login} />
-          <Stack.Screen name="Register" component={Register} />
-          <Stack.Screen name="Verification" component={Verification} />
+          <Stack.Screen name="Login" component={LoginScreen} />
+          <Stack.Screen name="Register" component={RegisterScreen} />
+          <Stack.Screen name="Verification" component={VerificationScreen} />
           <Stack.Screen name="Main" component={DrawerNavigator} />
         </Stack.Navigator>
       </NavigationContainer>
