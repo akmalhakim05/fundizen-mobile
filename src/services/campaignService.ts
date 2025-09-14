@@ -1,6 +1,6 @@
 import { collection, addDoc, getDocs, query, where } from 'firebase/firestore';
-import { db } from '../config/firebase';
-import { Campaign } from '../types';
+import { db } from '../config/Firebase';
+import { Campaign } from '../types/types';
 
 export const campaignService = {
   createCampaign: async (campaignData: Omit<Campaign, 'id'>) => {
